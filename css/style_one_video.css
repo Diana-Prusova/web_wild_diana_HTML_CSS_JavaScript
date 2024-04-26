@@ -1,0 +1,165 @@
+* {
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h1 {
+    color: #008888;
+    font-family: "Italianno", cursive;
+    font-size: 75px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/******** HEADER ********/
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 136, 136, 0.5), rgba(0, 136, 136, 0));
+    padding: 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+.hamburger img {
+    max-width: 35px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #ffffffea;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+    }
+}
+
+/******** MAIN ********/
+
+.nadpis {
+    display: flex;
+    justify-content: center;
+}
+
+.popis {
+    display: flex;
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.box_video {
+    overflow:hidden;
+    padding-bottom: 50%;
+    position:relative;
+    height:0;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+.box_video iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media (max-width: 900px) {
+    .box_video iframe {
+        padding-bottom: 75%; 
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}

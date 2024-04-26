@@ -1,0 +1,269 @@
+body {
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #008888;
+    font-family: "Italianno", cursive;
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #008888;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/******** HEADER ********/
+
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 136, 136, 0.5), rgba(0, 136, 136, 0));
+    padding: 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+
+.hamburger img {
+    max-width: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fffffff3;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+    }
+}
+
+/******** MAIN ********/
+
+.uvodni_text {
+    max-width: 700px;
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+.uvodni_text p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.box {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.box_two {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_maly {
+    max-width: 40%;
+    text-align: center;
+}
+
+.box_maly img {
+    max-width: 90%;
+}
+
+.box_velky {
+    max-width: 60%;
+    text-align: center;
+}
+
+.box_velky img {
+    max-width: 90%;
+}
+
+.oddelovac {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.oddelovac img {
+    text-align: center;
+    max-width: 200px;
+}
+
+.medailonek {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(77, 76, 76, 0.212);
+    padding: 20px;
+    margin-top: 20px;
+    
+
+}
+
+.medailonek p {
+    font-size: 16px;
+}
+
+.podpis {
+    text-align: start;
+    margin-top: 50px;
+}
+
+.podpis p {
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    .uvodni_text p {
+        font-size: 14px;
+    }
+
+    .oddelovac img {
+        max-width: 40%;
+    }
+
+    .box_maly {
+        max-width: 100%;
+    }
+
+    .box_maly img {
+        max-width: 60%;
+    }
+
+    .box_velky {
+        max-width: 100%;
+    }
+
+    .box_velky img {
+        max-width: 70%;
+    }
+
+    .medailonek p {
+        font-size: 12px;
+    }
+
+}
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}

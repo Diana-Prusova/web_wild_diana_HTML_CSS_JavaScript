@@ -1,0 +1,327 @@
+body {
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #008888;
+    font-family: "Italianno", cursive;
+    font-size: 75px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+figcaption {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/******** HEADER ********/
+
+.sona {
+    background-image: url('../img/bmn/sona/bojovnice_mezi_nami_sona_1.jpg');
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.liska {
+    background-image: url('../img/bmn/liska/bojovnice_mezi_nami_1.jpg');
+    background-size: cover;
+    background-position: 60% 20%;
+}
+
+.zuzka {
+    background-image: url('../img/bmn/zuzka/bojovnice_mezi_nami_zuzka_1.jpg');
+    background-size: cover;
+    background-position: 60% 35%;
+}
+
+.beata {
+    background-image: url('../img/bmn/beata/bojovnice_mezi_nami_beata_1.jpg');
+    background-size: cover;
+    background-position: 50% 15%;
+}
+
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(246, 247, 247, 0.877), rgba(255, 255, 255, 0));
+    padding: 20px 0 40px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+
+.hamburger img {
+    max-width: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fffffff3;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.box_header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.popis {
+    display: inline-block;
+    max-width: 400px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.425);
+    font-family: "Open Sans", sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+    }
+
+    .popis {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+}
+
+
+/******** MAIN ********/
+
+.box {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.box_two {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_maly {
+    max-width: 40%;
+    text-align: center;
+}
+
+.box_maly img {
+    max-width: 90%;
+}
+
+.box_velky {
+    max-width: 60%;
+    text-align: center;
+}
+
+.box_velky img {
+    max-width: 90%;
+}
+
+.oddelovac {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.oddelovac img {
+    text-align: center;
+    max-width: 200px;
+}
+
+.citace {
+    font-family: "Italianno", cursive;
+    font-size: 40px;
+    font-weight: 400;
+    max-width: 700px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.box_butt {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.butt {
+    padding: 8px 15px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    background-color: #008888;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+}
+
+.butt:hover {
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    .uvodni_text p {
+        font-size: 14px;
+    }
+
+    .oddelovac img {
+        max-width: 40%;
+    }
+
+    .box_maly {
+        max-width: 100%;
+    }
+
+    .box_maly img {
+        max-width: 60%;
+    }
+
+    .box_velky {
+        max-width: 100%;
+    }
+
+    .box_velky img {
+        max-width: 70%;
+    }
+
+    .citace {
+        max-width: 70%;
+        font-size: 30px;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+
+    .butt {
+        font-size: 15px;
+    }
+
+}
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}

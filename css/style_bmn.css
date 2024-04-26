@@ -1,0 +1,246 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+h2 {
+    display: block;
+    color: #008888;
+    font-family: "Italianno", cursive;
+    font-weight: 300;
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+/******** HEADER ********/
+
+header {
+    display: block;
+    height: 80vh;
+    background-image: url('../img/bmn/bojovnice_mezi_nami.jpg');
+    background-size: cover;
+    background-position: 75% 50%;
+}
+
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ffffff, transparent);
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+.hamburger img {
+    max-width: 35px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #ffffffea;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/******** MAIN ********/
+
+.uvodni_text {
+    text-align: center;
+    max-width: 1000px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    padding: 20px;
+}
+
+.beata {
+    background-image: url('../img/bmn/bojovnice_beata.jpg');
+    background-size: cover;
+    background-position: 60% 30%;
+    padding-top: 50px;
+}
+
+.zuzka {
+    background-image: url('../img/bmn/zuzka/bojovnice_mezi_nami_zuzka_1.jpg');
+    background-size: cover;
+    background-position: 60% 30%;
+    padding-top: 50px;
+}
+
+.liska {
+    background-image: url('../img/bmn/liska/bojovnice_mezi_nami_1.jpg');
+    background-size: cover;
+    background-position: 60% 30%;
+    padding-top: 50px;
+}
+
+.sona {
+    background-image: url('../img/bmn/sona/bojovnice_mezi_nami_sona_1.jpg');
+    background-size: cover;
+    background-position: 60% 30%;
+    padding-top: 50px;
+}
+
+.popis {
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.425);
+    color: #ffffff;
+}
+
+.button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    background-color: #ffffffab;
+}
+
+.button:hover {
+    background-color: #ffffffdc;
+}
+
+.oddelovac {
+    text-align: center;
+    padding: 20px;
+}
+
+.oddelovac img {
+    max-width: 250px;
+}
+
+@media (max-width: 700px) {
+    p {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .popis {
+        margin-left: 0;
+    }
+
+    .button {
+        margin: 30px 0;
+        font-size: 16px;
+    }
+
+    .oddelovac img {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .popis {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}

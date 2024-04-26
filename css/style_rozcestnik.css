@@ -1,0 +1,159 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+h3 {
+    color: #008888;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 45px;
+    max-width: 300px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #008888;
+}
+
+/******** HEADER ********/
+
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 136, 136, 0.5), rgba(0, 136, 136, 0));
+    padding: 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+.hamburger img {
+    max-width: 35px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fffffff3;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+    }
+
+}
+
+/******** MAIN ********/
+
+.nadpis {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 40px auto;
+}
+
+
+.img_box {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+.one_img_box {
+    text-align: center;
+    padding: 15px;
+}
+
+.one_img_box img{
+    max-width: 270px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+.one_img_box img:hover {
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .one_img_box img{
+        max-width: 200px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+}
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}

@@ -1,0 +1,272 @@
+* {
+    margin: 0 auto;
+    /* box-sizing: border-box; */
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+h3 {
+    color: #008888;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #008888;
+}
+
+h1 {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 350;
+    font-size: 13vh;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15vh;
+    margin-right: 5vw;
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+/******** HEADER ********/
+
+header {
+    display: block;
+    background-image: url('../img/kniha/diana_prusova_amazonky_na_prelomu_veku.jpg');
+    background-size: cover;
+    background-position: 30% 40%;
+    height: 100vh;
+}
+
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #ffffff, transparent);
+    padding-top: 15px;
+    padding-bottom: 75px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+.hamburger img {
+    max-width: 35px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #ffffffea;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.model_kniha {
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+}
+
+.model_kniha img {
+    max-height: 70vh;
+    margin: 20px;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+    }
+
+    .model_kniha {
+        display: none;
+    }
+
+    header {
+        height: 80vh;
+    }
+
+}
+
+
+/******** MAIN ********/
+
+
+.podtrzeno hr{
+    color: #008888;
+    text-align: center;
+    max-width: 50vh;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.tiraz {
+    padding: 20px;
+}
+
+.tlacitko {
+    color: white;
+    text-decoration: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #008888;
+    display: inline-block;
+    font-size: 21px;
+    transition: transform 0.3s ease;
+}
+
+.tlacitko:hover {
+    transform: scale(1.05)
+}
+
+.box img {
+    max-height: 400px;
+}
+
+.text {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box_video {
+    overflow:hidden;
+    padding-bottom: 50%;
+    position:relative;
+    height:0;
+    max-width: 900px;
+}
+
+.box_video iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.pozadi {
+    background-image: url('../img/kniha/kniha_amazonky_diana_prusova.jpg');
+    opacity: 0.7;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    background-size: cover;
+}
+
+.pozadi h3 {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    font-weight: 350;
+    margin-bottom: 30px;
+}
+
+.recenze {
+    max-width: 650px;
+    background-color: #ffffffe0;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.recenze a {
+    color: #008888;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 23px;
+}
+
+.recenze a:hover {
+    color: #2dbbbb;
+}
+
+@media (max-width: 900px) {
+    p {
+        font-size: 15px;
+    }
+
+    .box img {
+        max-height: 250px;
+    }
+
+    .box_video iframe {
+        padding-bottom: 75%; /* 4:3 poměr stran pro mobilní zařízení */
+    }
+
+}
+
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}
+

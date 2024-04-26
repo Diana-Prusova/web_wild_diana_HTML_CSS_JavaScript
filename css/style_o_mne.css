@@ -1,0 +1,225 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+h2 {
+    color: #008888;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 45px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #008888;
+    max-width: 40vw;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+/******** HEADER ********/
+
+.menu_box {
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 136, 136, 0.5), rgba(0, 136, 136, 0));
+    padding: 25px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0 15px;
+}
+
+.menu a:hover {
+    color: #008888;
+}
+
+/* MOBILNÍ NAVIGACE */
+.menu {
+    display: none;
+}
+
+.hamburger img {
+    max-width: 35px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.mobilni_menu {
+    display: block;
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    background-color: #fffffff3;
+}
+
+.mobilni_menu a{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .hamburger img {
+        display: block;
+    }
+}
+
+/******** MAIN ********/
+.uvodni_text {
+    text-align: center;
+    margin: 22px auto 0 auto;
+}
+
+.uvodni_text p {
+    font-size: 40px;
+    max-width: 70%;
+    font-family: "Italianno", cursive;
+}
+
+.nadpis {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: justify;
+    max-width: 70%;
+
+}
+
+.oddelovac {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.oddelovac img {
+    max-width: 200px;
+}
+
+.box_text_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 70%;
+    gap: 30px; 
+    margin-bottom: 20px;
+}
+
+.box_text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.one_box {
+    flex: 2;
+    text-align: center;
+}
+
+
+.one_box img{
+    max-width: 100%;
+}
+
+@media (max-width: 700px) {
+    .uvodni_text p {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 25px;
+        max-width: 50vw;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 14px;
+        max-width: 85%;
+    }
+
+    .box_text {
+        font-size: 14px;
+        max-width: 85%;
+    }
+
+    .box_text_img {
+        flex-direction: column;
+    }
+
+    .oddelovac img {
+        max-width: 40%;
+    }
+}
+
+/******** FOOTER ********/
+
+.paticka {
+    background-color: #008888;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pat_box {
+    margin: 25px;
+}
+
+.paticka img {
+    max-width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.paticka img:hover{
+    transform: scale(1.05)
+}
+
+@media (max-width: 700px) {
+    .paticka img {
+        max-width: 35px;
+    }
+    .pat_box {
+        margin: 15px auto;
+    }
+}
